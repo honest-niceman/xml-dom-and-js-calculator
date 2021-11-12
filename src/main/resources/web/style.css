@@ -1,0 +1,82 @@
+h1 {
+    color: gold;
+}
+
+p {
+    word-spacing: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+body {
+    text-align: center;
+    background-color: #adadff;
+}
+
+input[type="text"] {
+    font-size: 25px;
+    color: #aeaeff;
+}
+
+.radioBut {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.radioBut > p {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.double-btn {
+    margin: 6px auto;
+    position: relative;
+    display: inline-block;
+    padding: 15px 70px;
+    text-decoration: none;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 4px;
+    color: white;
+    background: darkslateblue;
+    transition: .3s;
+}
+
+.radioBut {
+    margin: 0 auto;
+}
+
+.radioBut input[type=radio] {
+    display: none;
+}
+
+.radioBut label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 15px;
+    line-height: 38px;
+    border: 1px solid white;
+    border-radius: 6px;
+    user-select: none;
+}
+
+/* Checked */
+.radioBut input[type=radio]:checked + label {
+    background: gold;
+}
+
+/* Hover */
+.radioBut label:hover {
+    color: gold;
+}
+
+a:hover {
+    color: white;
+}
+
+table {
+    margin: 0 auto;
+    color: gold;
+    font-size: 20px;
+}

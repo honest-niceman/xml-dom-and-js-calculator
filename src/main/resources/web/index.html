@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Main page</title>
+</head>
+<body>
+<div class="divIndex">
+    <h1>Calculator</h1>
+    <form action="result.html"
+          name="inputData"
+          id="inputData"
+          method="get">
+        <p>
+            <label for="firstValue">First Value:</label>
+        </p>
+        <p>
+            <input type="text"
+                   id="firstValue"
+                   name="firstValue"
+                   pattern="[+-]?\d+(\.\d+)?"
+                   maxlength="6">
+        </p>
+        <p>
+            <label for="secondValue">Second Value:</label>
+        </p>
+        <p>
+            <input type="text"
+                   id="secondValue"
+                   name="secondValue"
+                   pattern="[+-]?\d+(\.\d+)?"
+                   maxlength="6">
+        </p>
+
+        <p>Choose operation:</p>
+        <div class="radioBut">
+            <p>
+                <input type="radio"
+                       id="plus"
+                       name="operation"
+                       checked="checked"
+                       value="+">
+                <label for="plus">+</label>
+            </p>
+
+            <p>
+                <input type="radio"
+                       id="minus"
+                       name="operation"
+                       value="-">
+                <label for="minus">-</label>
+            </p>
+
+            <p>
+                <input type="radio"
+                       id="mul"
+                       name="operation"
+                       value="*">
+                <label for="mul">*</label>
+            </p>
+
+            <p>
+                <input type="radio"
+                       id="div"
+                       name="operation"
+                       value="/">
+                <label for="div">/</label>
+            </p>
+        </div>
+        <button id="calcId"
+                name="calcName"
+                type="submit"
+                class="double-btn">Calculate!
+        </button>
+    </form>
+</div>
+</body>
+</html>
